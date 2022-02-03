@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Niveles/tilesFrente.tres" type="TileSet" id=1]
 [ext_resource path="res://Personajes/Jugador.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Escenas/LlaveDorada.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Escenas/LlaveRoja.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Escenas/LlavePlata.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Escenas/Rama.tscn" type="PackedScene" id=10]
 
 [sub_resource type="SegmentShape2D" id=58]
 b = Vector2( 0, 608 )
@@ -89,3 +90,13 @@ position = Vector2( 17, 405 )
 
 [node name="jugador" parent="." instance=ExtResource( 2 )]
 position = Vector2( 15, 105 )
+
+[node name="LlavePlata2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 111, 94 )
+
+[node name="LlaveRoja2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 171, 103 )
+
+[node name="Rama" parent="." instance=ExtResource( 10 )]
+visible = true
+position = Vector2( 129, 140 )
