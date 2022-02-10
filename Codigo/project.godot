@@ -39,7 +39,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Escenas/Scripts/LogicaLlave.gd"
 }, {
-"base": "RigidBody2D",
+"base": "Sprite",
 "class": "Rama",
 "language": "GDScript",
 "path": "res://Escenas/Scripts/Rama.gd"

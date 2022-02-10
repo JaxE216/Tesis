@@ -11,12 +11,13 @@ func _process(delta):
 		jugador.MOVER:
 			if colisionJugador is Llave:
 				colisionJugador.recoger()
-			if colisionJugador is Rama:
-				#if colisionJugador.banTirada == true:
-				colisionJugador.recogerRama()
-				jugador.armarJugador()
+#			if colisionJugador is Rama:
+#				#if colisionJugador.banTirada == true:
+#				colisionJugador.recogerRama()
+#				jugador.armarJugador()
 		jugador.ATACAR:
+			pass
 #			if colisionJugador is ArbolDiamante:
 #				colisionJugador.tirarDiamante()
-			if colisionJugador is ArbolRama:
-				colisionJugador.tirarRama()
+#			if colisionJugador is ArbolRama:
+#				colisionJugador.tirarRama()

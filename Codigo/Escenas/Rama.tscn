@@ -1,23 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Objetos/rama.png" type="Texture" id=1]
 [ext_resource path="res://Escenas/Scripts/Rama.gd" type="Script" id=2]
+[ext_resource path="res://Escenas/HitBox.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 4, 4 )
+extents = Vector2( 7.14286, 7.14286 )
 
-[node name="Rama" type="RigidBody2D"]
-visible = false
-mode = 1
-contacts_reported = 4
-contact_monitor = true
-can_sleep = false
-script = ExtResource( 2 )
-
-[node name="ramaSprite" type="Sprite" parent="."]
+[node name="ramaSprite" type="Sprite"]
 position = Vector2( 0, 1.90735e-06 )
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 1 )
+script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="HitBoxRama" parent="." instance=ExtResource( 3 )]
+scale = Vector2( 1, 1 )
+
+[node name="CollisionShape2D" parent="HitBoxRama" index="0"]
+position = Vector2( -3.40598e-07, -2.89509e-06 )
 shape = SubResource( 1 )
+
+[connection signal="body_entered" from="HitBoxRama" to="." method="_on_HitBoxRama_body_entered"]
+
+[editable path="HitBoxRama"]

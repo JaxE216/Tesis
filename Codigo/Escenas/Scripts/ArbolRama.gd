@@ -13,3 +13,9 @@ func tirarRama():
 func reiniciarArbol():
 	get_node("arbolRamaSprite").show()
 	get_node("arbolSprite").hide()
+
+
+
+func _on_HitBoxArbol_area_entered(area):
+	if area.name != 'HitBoxRama':
+		tirarRama()
