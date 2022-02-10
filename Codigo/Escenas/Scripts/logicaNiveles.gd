@@ -9,9 +9,6 @@ func _process(delta):
 	var colisionJugador = jugador.get_colision()
 	match jugador.estado:
 		jugador.MOVER:
-			if colisionJugador is Diamante:
-				if colisionJugador.enArbol == false:
-					colisionJugador.recoger()
 			if colisionJugador is Llave:
 				colisionJugador.recoger()
 			if colisionJugador is Rama:
@@ -19,7 +16,7 @@ func _process(delta):
 				colisionJugador.recogerRama()
 				jugador.armarJugador()
 		jugador.ATACAR:
-			if colisionJugador is ArbolDiamante:
-				colisionJugador.tirarDiamante()
+#			if colisionJugador is ArbolDiamante:
+#				colisionJugador.tirarDiamante()
 			if colisionJugador is ArbolRama:
 				colisionJugador.tirarRama()

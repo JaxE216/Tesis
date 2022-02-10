@@ -116,9 +116,11 @@ shape = SubResource( 10 )
 
 [node name="Diamante_0" parent="." instance=ExtResource( 5 )]
 position = Vector2( 29, 272 )
+frame = 0
 
 [node name="Diamante_1" parent="." instance=ExtResource( 5 )]
 position = Vector2( 314, 258 )
+frame = 0
 
 [node name="arbolDiamante" parent="." instance=ExtResource( 6 )]
 position = Vector2( 536, 424 )
