@@ -34,7 +34,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://experimentos/JugadorTest.gd"
 }, {
-"base": "RigidBody2D",
+"base": "Sprite",
 "class": "Llave",
 "language": "GDScript",
 "path": "res://Escenas/Scripts/LogicaLlave.gd"

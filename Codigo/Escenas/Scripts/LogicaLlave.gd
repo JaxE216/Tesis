@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends Sprite
 
 class_name Llave
 
@@ -14,3 +14,7 @@ func recoger():
 
 func get_class():
 	return "Llave"
+
+
+func _on_HitBoxLlave_body_entered(body):
+	recoger()
