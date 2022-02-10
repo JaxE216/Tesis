@@ -2,6 +2,9 @@ extends StaticBody2D
 
 class_name ArbolRama
 
+func get_class():
+	return "ArbolRama"
+
 func tirarRama():
 	get_node("Rama").ramaTirada()
 	get_node("arbolRamaSprite").hide()

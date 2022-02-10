@@ -11,16 +11,16 @@ extents = Vector2( 4, 3.75 )
 scale = Vector2( 0.7, 0.7 )
 frames = ExtResource( 1 )
 animation = "diamante"
+frame = 1
 playing = true
 script = ExtResource( 2 )
 
-[node name="HitBox" parent="." instance=ExtResource( 3 )]
-scale = Vector2( 1, 1 )
+[node name="HitBoxDiamante" parent="." instance=ExtResource( 3 )]
 
-[node name="CollisionShape2D" parent="HitBox" index="0"]
+[node name="CollisionShape2D" parent="HitBoxDiamante" index="0"]
 position = Vector2( 0, -0.25 )
 shape = SubResource( 1 )
 
-[connection signal="body_entered" from="HitBox" to="." method="_on_HitBox_body_entered"]
+[connection signal="body_entered" from="HitBoxDiamante" to="." method="_on_HitBox_body_entered"]
 
-[editable path="HitBox"]
+[editable path="HitBoxDiamante"]
