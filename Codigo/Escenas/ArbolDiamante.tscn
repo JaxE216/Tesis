@@ -25,6 +25,6 @@ position = Vector2( 0, 24 )
 contacts_reported = 1
 
 [node name="Diamante_sprite" parent="DiamanteCaido" index="0"]
-frame = 1
+frame = 0
 
 [editable path="DiamanteCaido"]

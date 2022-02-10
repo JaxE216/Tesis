@@ -2,9 +2,9 @@ extends StaticBody2D
 
 class_name ArbolDiamante
 
-#func _ready():
-#	get_node("DiamanteCaido/CollisionShape2D").disabled = true
-#	print(get_node("DiamanteCaido/CollisionShape2D").disabled)
+func _ready():
+	get_node("DiamanteCaido/CollisionShape2D").disabled = true
+	print(get_node("DiamanteCaido/CollisionShape2D").disabled)
 
 func get_class():
 	return "ArbolDiamante"
