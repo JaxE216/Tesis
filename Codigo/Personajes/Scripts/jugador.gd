@@ -9,11 +9,14 @@ enum {
 	ATACAR
 }
 
+# Variables de control
 var velocidad = Vector2.ZERO
 var estado = MOVER
+var colisionando = false
+
+# Variables de estado
 var banArmado = false
 var saludRama
-var colisionando = false
 
 onready var animacion = $AnimationPlayer
 onready var arbolAnimacion = $AnimationTree
@@ -84,7 +87,8 @@ func armarJugador():
 	saludRama = 100
 	banArmado = true
 
-
+func recogerLlave():
+	print('llave recogida')
 
 
 # Por si la cago está respaldado
