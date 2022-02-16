@@ -18,6 +18,10 @@ var colisionando = false
 var banArmado = false
 var saludRama
 
+var llaveRoja = false
+var llavePlata = false
+var llaveDorada = false
+
 onready var animacion = $AnimationPlayer
 onready var arbolAnimacion = $AnimationTree
 onready var estadoAnimacion = arbolAnimacion.get("parameters/playback")
@@ -87,8 +91,17 @@ func armarJugador():
 	saludRama = 100
 	banArmado = true
 
-func recogerLlave():
-	print('llave recogida')
+func recogerLlave(tipoLlave):
+	print(tipoLlave)
+	
+	match tipoLlave:
+		'LlaveRoja':
+			llaveRoja = true
+		'LlavePlata':
+			llavePlata = true
+		'LlaveDorada':
+			llaveDorada = true
+	
 
 
 # Por si la cago está respaldado

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Niveles/tilesFrente.tres" type="TileSet" id=1]
 [ext_resource path="res://Personajes/Jugador.tscn" type="PackedScene" id=2]
@@ -24,6 +24,9 @@ b = Vector2( 1054, 392 )
 [sub_resource type="SegmentShape2D" id=60]
 a = Vector2( 0, 10 )
 b = Vector2( 1055, 10 )
+
+[sub_resource type="SegmentShape2D" id=63]
+a = Vector2( 0, -127 )
 
 [sub_resource type="RectangleShape2D" id=61]
 extents = Vector2( 21.5, 24.5 )
@@ -65,11 +68,15 @@ tile_data = PoolIntArray( 2883710, 1, 0, 2883712, 0, 0, 2883714, 1, 0, 3014782, 
 [node name="izquierda" type="CollisionShape2D" parent="limitesMapa"]
 shape = SubResource( 58 )
 
-[node name="derecha" type="CollisionShape2D" parent="limitesMapa"]
+[node name="derecha_0" type="CollisionShape2D" parent="limitesMapa"]
 shape = SubResource( 59 )
 
 [node name="arriba" type="CollisionShape2D" parent="limitesMapa"]
 shape = SubResource( 60 )
+
+[node name="derecha_1" type="CollisionShape2D" parent="limitesMapa"]
+position = Vector2( 1055, 519 )
+shape = SubResource( 63 )
 
 [node name="colisionesIndependientes" type="StaticBody2D" parent="."]
 
@@ -83,15 +90,15 @@ shape = SubResource( 62 )
 
 [node name="Diamante_0" parent="." instance=ExtResource( 5 )]
 position = Vector2( 274, 20 )
-frame = 4
+frame = 6
 
 [node name="Diamante_1" parent="." instance=ExtResource( 5 )]
 position = Vector2( 672, 181 )
-frame = 4
+frame = 6
 
 [node name="Diamante_2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 507, 509 )
-frame = 4
+frame = 6
 
 [node name="LlaveDorada" parent="." instance=ExtResource( 7 )]
 position = Vector2( 853, 506 )
@@ -102,13 +109,13 @@ position = Vector2( 993, 73 )
 [node name="LlavePlata" parent="." instance=ExtResource( 9 )]
 position = Vector2( 17, 405 )
 
-[node name="PuertaGold" parent="." instance=ExtResource( 10 )]
+[node name="PuertaDorada" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1040, 413 )
 
-[node name="PuertaRed" parent="." instance=ExtResource( 12 )]
+[node name="PuertaRoja" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1040, 441 )
 
-[node name="PuertaSilver" parent="." instance=ExtResource( 13 )]
+[node name="PuertaPlata" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1040, 469 )
 
 [node name="jugador" parent="." instance=ExtResource( 2 )]

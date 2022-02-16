@@ -2,19 +2,21 @@ extends Sprite
 
 class_name Llave
 
-var recogido
+var enArbol
+
+var tipoLlave
 
 func _ready():
-	recogido = "false"
-	print(get_node(".").name)
+	enArbol = "false"
+	tipoLlave = get_node(".").name
+	print(tipoLlave)
 
 func recoger(body):
-	print(body.name)
 	if body.name == 'jugador':
-		recogido = "true"
-		get_node(".").queue_free()
+		body.recogerLlave(tipoLlave)
 		
-		body.recogerLlave()
+		enArbol = "true"
+		get_node(".").queue_free()
 
 func get_class():
 	return "Llave"
