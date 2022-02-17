@@ -61,11 +61,11 @@ position = Vector2( 728, 472 )
 
 [node name="Diamante_0" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1010, 532 )
-frame = 4
+frame = 1
 
 [node name="Diamante_1" parent="." instance=ExtResource( 4 )]
 position = Vector2( 584, 215 )
-frame = 4
+frame = 1
 
 [node name="colisionesIndependientes" type="StaticBody2D" parent="."]
 

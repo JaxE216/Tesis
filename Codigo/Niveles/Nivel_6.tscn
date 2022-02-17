@@ -60,7 +60,7 @@ position = Vector2( 968, 24 )
 
 [node name="Diamante_0" parent="." instance=ExtResource( 5 )]
 position = Vector2( 49, 429 )
-frame = 4
+frame = 5
 
 [node name="limitesMapa" type="StaticBody2D" parent="."]
 

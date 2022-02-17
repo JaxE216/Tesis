@@ -62,7 +62,7 @@ tile_data = PoolIntArray( 65561, 4, 0, 65562, 5, 0, 65574, 5, 0, 65584, 4, 0, 13
 
 [node name="Diamante_0" parent="." instance=ExtResource( 5 )]
 position = Vector2( 164, 543 )
-frame = 6
+frame = 1
 
 [node name="arbolDiamante" parent="." instance=ExtResource( 4 )]
 position = Vector2( 24, 136 )
