@@ -12,7 +12,7 @@
 [ext_resource path="res://Escenas/Puerta_Red.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Escenas/Puerta_Silver.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Escenas/Puerta_Gold.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Escenas/Puente.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Escenas/PuenteHorizontal.tscn" type="PackedScene" id=13]
 
 [sub_resource type="SegmentShape2D" id=1]
 b = Vector2( 0, 608 )
@@ -80,7 +80,7 @@ position = Vector2( 312, 344 )
 [node name="arbolDiamante5" parent="." instance=ExtResource( 6 )]
 position = Vector2( 744, 360 )
 
-[node name="Puente" parent="." instance=ExtResource( 13 )]
+[node name="PuenteHorizontal_CM" parent="." instance=ExtResource( 13 )]
 position = Vector2( 248, 264 )
 
 [node name="colisionesIndependientes" type="StaticBody2D" parent="."]
@@ -94,9 +94,6 @@ polygon = PoolVector2Array( 208, -1, 288, 0, 288, 240, 208, 240 )
 
 [node name="rio_1" type="CollisionPolygon2D" parent="colisionesIndependientes"]
 polygon = PoolVector2Array( 208, 284, 288, 284, 288, 607, 208, 606 )
-
-[node name="puenteFaltante" type="CollisionPolygon2D" parent="colisionesIndependientes"]
-polygon = PoolVector2Array( 240, 251, 257, 251, 257, 275, 240, 275 )
 
 [node name="limitesMapa" type="StaticBody2D" parent="."]
 

@@ -14,10 +14,7 @@
 [ext_resource path="res://Escenas/Puerta_Gold.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Escenas/Puerta_Red.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Escenas/Puerta_Silver.tscn" type="PackedScene" id=14]
-
-[sub_resource type="SegmentShape2D" id=1]
-a = Vector2( 288, 345 )
-b = Vector2( 208, 345 )
+[ext_resource path="res://Escenas/PuenteHorizontal.tscn" type="PackedScene" id=15]
 
 [sub_resource type="SegmentShape2D" id=2]
 b = Vector2( 0, 345 )
@@ -77,14 +74,10 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -131020, 0, 0, -131014, 0, 0, 52, 1, 0, 58, 1, 0, 131124, 0, 0, 131130, 0, 0, 262196, 1, 0, 262202, 1, 0, 393268, 0, 0, 393274, 0, 0, 524340, 1, 0, 524346, 1, 0 )
 
+[node name="PuenteHorizontal_SM" parent="." instance=ExtResource( 15 )]
+position = Vector2( 248, 360 )
+
 [node name="colisionesIndependientes" type="StaticBody2D" parent="."]
-
-[node name="puenteArriba" type="CollisionShape2D" parent="colisionesIndependientes"]
-shape = SubResource( 1 )
-
-[node name="puenteAbajo" type="CollisionShape2D" parent="colisionesIndependientes"]
-position = Vector2( 0, 29 )
-shape = SubResource( 1 )
 
 [node name="rioIzq_0" type="CollisionShape2D" parent="colisionesIndependientes"]
 position = Vector2( 214, -1 )
@@ -127,11 +120,11 @@ shape = SubResource( 10 )
 
 [node name="Diamante_0" parent="." instance=ExtResource( 5 )]
 position = Vector2( 29, 272 )
-frame = 0
+frame = 6
 
 [node name="Diamante_1" parent="." instance=ExtResource( 5 )]
 position = Vector2( 314, 258 )
-frame = 0
+frame = 6
 
 [node name="arbolDiamante" parent="." instance=ExtResource( 6 )]
 position = Vector2( 536, 424 )
@@ -155,4 +148,4 @@ position = Vector2( 448, 56 )
 position = Vector2( 448, 84 )
 
 [node name="jugador" parent="." instance=ExtResource( 3 )]
-position = Vector2( 395, 100 )
+position = Vector2( 177, 357 )
