@@ -7,15 +7,14 @@ var enArbol
 var tipoLlave
 
 func _ready():
-	enArbol = "false"
+	enArbol = false
 	tipoLlave = get_node(".").name
-	print(tipoLlave)
 
 func recoger(body):
 	if body.name == 'jugador':
 		body.recogerLlave(tipoLlave)
 		
-		enArbol = "true"
+		enArbol = true
 		get_node(".").queue_free()
 
 func get_class():
@@ -23,4 +22,5 @@ func get_class():
 
 
 func _on_HitBoxLlave_body_entered(body):
-	recoger(body)
+	if !enArbol:
+		recoger(body)

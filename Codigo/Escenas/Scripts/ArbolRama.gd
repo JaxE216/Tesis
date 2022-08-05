@@ -17,5 +17,5 @@ func reiniciarArbol():
 
 
 func _on_HitBoxArbol_area_entered(area):
-	if area.name != 'HitBoxRama':
+	if area.name != 'HitBoxRama' and area.name != 'hurtBoxJugador':
 		tirarRama()

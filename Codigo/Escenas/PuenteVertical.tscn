@@ -19,10 +19,14 @@ polygon = PoolVector2Array( 12, -41, 17, -41, 17, 41, 12, 41 )
 disabled = true
 
 [node name="puenteIncompleto" type="Sprite" parent="."]
+visible = false
 texture = ExtResource( 2 )
 
 [node name="colisionArriba" type="CollisionPolygon2D" parent="."]
+visible = false
 polygon = PoolVector2Array( -17, -41, -17, -4, 17, -4, 17, -41, 12, -41, 12, -5, -12, -5, -12, -41 )
+disabled = true
 
 [node name="colisionAbajo" type="CollisionPolygon2D" parent="."]
+visible = false
 polygon = PoolVector2Array( -17, 12, 17, 12, 17, 41, 12, 41, 12, 13, -12, 13, -12, 41, -17, 41 )

@@ -20,8 +20,8 @@ func habilitarPuenteH(mostrar):
 		# Desactivar puente incompleto
 		get_node("puenteIncompleto").visible = false
 		
-		get_node("colisionIzquierda").disabled = true
-		get_node("colisionDerecha").disabled = true
+		get_node("colisionIzquierda").set_deferred("disabled", true)
+		get_node("colisionDerecha").set_deferred("disabled", true)
 		
 		get_node("colisionIzquierda").visible = false
 		get_node("colisionDerecha").visible = false
@@ -29,8 +29,8 @@ func habilitarPuenteH(mostrar):
 		# Activar puente completo
 		get_node("puenteCompleto").visible = true
 		
-		get_node("colisionArriba").disabled = false
-		get_node("colisionAbajo").disabled = false
+		get_node("colisionArriba").set_deferred("disabled", false)
+		get_node("colisionAbajo").set_deferred("disabled", false)
 		
 		get_node("colisionArriba").visible = true
 		get_node("colisionAbajo").visible = true
@@ -39,8 +39,8 @@ func habilitarPuenteH(mostrar):
 		# Activar puente incompleto
 		get_node("puenteIncompleto").visible = true
 		
-		get_node("colisionIzquierda").disabled = false
-		get_node("colisionDerecha").disabled = false
+		get_node("colisionIzquierda").set_deferred("disabled", false)
+		get_node("colisionDerecha").set_deferred("disabled", false)
 		
 		get_node("colisionIzquierda").visible = true
 		get_node("colisionDerecha").visible = true
@@ -48,8 +48,8 @@ func habilitarPuenteH(mostrar):
 		# Desactivar puente completo
 		get_node("puenteCompleto").visible = false
 		
-		get_node("colisionArriba").disabled = true
-		get_node("colisionAbajo").disabled = true
+		get_node("colisionArriba").set_deferred("disabled", true)
+		get_node("colisionAbajo").set_deferred("disabled", true)
 		
 		get_node("colisionArriba").visible = false
 		get_node("colisionAbajo").visible = false
@@ -59,8 +59,8 @@ func habilitarPuenteV(mostrar):
 		# Desactivar puente incompleto
 		get_node("puenteIncompleto").visible = false
 		
-		get_node("colisionArriba").disabled = true
-		get_node("colisionAbajo").disabled = true
+		get_node("colisionArriba").set_deferred("disabled", true)
+		get_node("colisionAbajo").set_deferred("disabled", true)
 		
 		get_node("colisionArriba").visible = false
 		get_node("colisionAbajo").visible = false
@@ -68,8 +68,8 @@ func habilitarPuenteV(mostrar):
 		# Activar puente completo
 		get_node("puenteCompleto").visible = true
 		
-		get_node("colisionIzquierda").disabled = false
-		get_node("colisionDerecha").disabled = false
+		get_node("colisionIzquierda").set_deferred("disabled", false)
+		get_node("colisionDerecha").set_deferred("disabled", false)
 		
 		get_node("colisionIzquierda").visible = true
 		get_node("colisionDerecha").visible = true
@@ -78,8 +78,8 @@ func habilitarPuenteV(mostrar):
 		# Activar puente incompleto
 		get_node("puenteIncompleto").visible = true
 		
-		get_node("colisionArriba").disabled = false
-		get_node("colisionAbajo").disabled = false
+		get_node("colisionArriba").set_deferred("disabled", false)
+		get_node("colisionAbajo").set_deferred("disabled", false)
 		
 		get_node("colisionArriba").visible = true
 		get_node("colisionAbajo").visible = true
@@ -87,8 +87,8 @@ func habilitarPuenteV(mostrar):
 		# Desactivar puente completo
 		get_node("puenteCompleto").visible = false
 		
-		get_node("colisionIzquierda").disabled = true
-		get_node("colisionDerecha").disabled = true
+		get_node("colisionIzquierda").set_deferred("disabled", true)
+		get_node("colisionDerecha").set_deferred("disabled", true)
 		
 		get_node("colisionIzquierda").visible = false
 		get_node("colisionDerecha").visible = false

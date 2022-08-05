@@ -14,7 +14,7 @@ texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="HitBoxRama" parent="." instance=ExtResource( 3 )]
-scale = Vector2( 1, 1 )
+visible = false
 
 [node name="CollisionShape2D" parent="HitBoxRama" index="0"]
 position = Vector2( -3.40598e-07, -2.89509e-06 )
