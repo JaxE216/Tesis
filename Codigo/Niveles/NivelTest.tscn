@@ -27,9 +27,11 @@ tile_data = PoolIntArray( 0, 6, 0, 1, 12, 0, 2, 9, 0, 3, 9, 0, 4, 9, 0, 5, 9, 0,
 
 [node name="DiamanteCaido" parent="." instance=ExtResource( 5 )]
 position = Vector2( 138, 89 )
+frame = 6
 
 [node name="DiamanteCaido2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 131, 162 )
+frame = 6
 
 [node name="ArbolRama" parent="." instance=ExtResource( 7 )]
 position = Vector2( 101, 169 )
@@ -42,3 +44,7 @@ position = Vector2( 165, 123 )
 
 [node name="jugador" parent="." instance=ExtResource( 2 )]
 position = Vector2( 55, 131 )
+
+[node name="TileMap" type="TileMap" parent="."]
+cell_size = Vector2( 16, 16 )
+format = 1
