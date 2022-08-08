@@ -121,3 +121,11 @@ func _on_hurtBox_area_entered(area):
 	print(saludJugador)
 	if saludJugador <= 0:
 		print('Has morido')
+
+
+func _on_areaGolpeoCA_area_entered(area):
+	print(area.name)
+	if area.name == 'HitBoxEnemigo':
+		saludRama = saludRama - 25
+		if saludRama == 0:
+			banArmado = false
