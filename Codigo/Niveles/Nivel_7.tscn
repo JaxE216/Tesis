@@ -71,7 +71,7 @@ position = Vector2( 887.484, 198.739 )
 
 [node name="Diamante_0" parent="." instance=ExtResource( 5 )]
 position = Vector2( 164, 543 )
-frame = 0
+frame = 2
 
 [node name="arbolDiamante" parent="." instance=ExtResource( 4 )]
 position = Vector2( 24, 136 )
