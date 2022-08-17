@@ -12,6 +12,7 @@ func _ready():
 
 func recoger(body):
 	if body.name == 'jugador':
+		Checkpoints.reaparicion = global_position
 		body.recogerLlave(tipoLlave)
 		
 		enArbol = true

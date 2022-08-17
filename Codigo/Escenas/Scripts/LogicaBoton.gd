@@ -1,8 +1,6 @@
 extends StaticBody2D
 
-
-func _ready():
-	pass # Replace with function body.
+onready var botonName = get_node(".").name
 
 
 func _on_HitBox_body_entered(body):
@@ -18,4 +16,9 @@ func _on_HitBox_body_exited(body):
 
 
 func _on_HitBox_area_entered(area):
-	print(area.name)
+	match(botonName):
+		'Btn_NuevoJuego':
+			get_tree().change_scene("res://Niveles/Nivel_1.tscn")
+		'Btn_Salir':
+			get_tree().notification(MainLoop.NOTIFICATION_WM_QUIT_REQUEST)
+
