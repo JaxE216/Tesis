@@ -23,11 +23,11 @@ animations = [ {
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 7.14286
-height = 5.71428
+height = 14.2857
 
 [sub_resource type="CapsuleShape2D" id=3]
-radius = 7.14286
-height = 5.71428
+radius = 8.57143
+height = 11.4286
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 64.2857
@@ -43,7 +43,7 @@ texture = ExtResource( 11 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-frame = 4
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

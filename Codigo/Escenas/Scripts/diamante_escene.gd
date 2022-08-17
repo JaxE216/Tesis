@@ -10,6 +10,7 @@ var enArbol = false
 func recoger():
 	print('Diamante recogido')
 	recogido = true
+	Checkpoints.reaparicion = global_position
 	get_node(".").queue_free()
 
 func get_class():

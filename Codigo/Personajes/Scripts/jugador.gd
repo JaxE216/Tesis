@@ -33,6 +33,11 @@ func _ready():
 	arbolAnimacion.active = true
 	hitboxGolpeCA.vector_direccionGolpe = Vector2.LEFT
 	hitboxGolpeSA.vector_direccionGolpe = Vector2.LEFT
+	
+	if Checkpoints.reaparicion:
+		global_position = Checkpoints.reaparicion
+	else:
+		global_position = get_parent().get_node("PosInicial").global_position
 
 func _physics_process(delta):
 	match estado:
@@ -120,7 +125,11 @@ func _on_hurtBox_area_entered(area):
 		saludJugador = saludJugador - 10
 	print(saludJugador)
 	if saludJugador <= 0:
-		print('Has morido')
+		if Checkpoints.reaparicion:
+			global_position = Checkpoints.reaparicion
+			saludJugador = 100
+		else:
+			global_position = get_parent().get_node("PosInicial").global_position
 
 
 func _on_areaGolpeoCA_area_entered(area):

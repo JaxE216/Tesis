@@ -37,9 +37,3 @@ func _process(delta):
 					'Nivel_8':
 						if colisionJugador.tipoPuerta == 'PuertaPlata' and colisionJugador.abierto:
 							get_tree().change_scene("res://Niveles/Nivel_9.tscn")
-		jugador.ATACAR:
-			pass
-#			if colisionJugador is ArbolDiamante:
-#				colisionJugador.tirarDiamante()
-#			if colisionJugador is ArbolRama:
-#				colisionJugador.tirarRama()
