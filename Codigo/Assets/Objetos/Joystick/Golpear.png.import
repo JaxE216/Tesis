@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Item__68.png-eb9517bf37334d5bcc520b806ccae494.stex"
+path="res://.import/Golpear.png-e96e3375b1273bf7869496a8cfb11045.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Objetos/Item__68.png"
-dest_files=[ "res://.import/Item__68.png-eb9517bf37334d5bcc520b806ccae494.stex" ]
+source_file="res://Assets/Objetos/Joystick/Golpear.png"
+dest_files=[ "res://.import/Golpear.png-e96e3375b1273bf7869496a8cfb11045.stex" ]
 
 [params]
 

@@ -15,25 +15,33 @@ func _process(delta):
 				match nivel:
 					'Nivel_1':
 						if colisionJugador.tipoPuerta == 'PuertaDorada' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_2.tscn")
 					'Nivel_2':
 						if colisionJugador.tipoPuerta == 'PuertaDorada' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_3.tscn")
 					'Nivel_3':
 						if colisionJugador.tipoPuerta == 'PuertaRoja' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_4.tscn")
 					'Nivel_4':
 						if colisionJugador.tipoPuerta == 'PuertaRoja' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_5.tscn")
 					'Nivel_5':
 						if colisionJugador.tipoPuerta == 'PuertaRoja' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_6.tscn")
 					'Nivel_6':
 						if colisionJugador.tipoPuerta == 'PuertaRoja' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_7.tscn")
 					'Nivel_7':
 						if colisionJugador.tipoPuerta == 'PuertaDorada' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_8.tscn")
 					'Nivel_8':
 						if colisionJugador.tipoPuerta == 'PuertaPlata' and colisionJugador.abierto:
+							Checkpoints.vaciarDatos()
 							get_tree().change_scene("res://Niveles/Nivel_9.tscn")

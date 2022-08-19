@@ -11,11 +11,13 @@ func recoger():
 	print('Diamante recogido')
 	recogido = true
 	Checkpoints.reaparicion = global_position
+	
 	get_node(".").queue_free()
 
 func get_class():
 	return "Diamante"
 
-func _on_HitBox_body_entered(body):
-	if !enArbol:
+func _on_HitBoxDiamante_area_entered(area):
+	print(area.name)
+	if area.name == 'hurtBoxJugador':
 		recoger()

@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Escenas/MenuPausa.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Escenas/Joystick/Joystick.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Escenas/Contadores/Contadores.tscn" type="PackedScene" id=3]
 
 [node name="GUI" type="CanvasLayer"]
 
 [node name="MenuPausa" parent="." instance=ExtResource( 1 )]
 pause_mode = 2
 visible = false
+
+[node name="Contadores" parent="." instance=ExtResource( 3 )]
+
+[node name="Joystick" parent="." instance=ExtResource( 2 )]

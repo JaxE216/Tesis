@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Objetos/Boton_Iniciar.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Objetos/Boton_Salir.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Assets/Objetos/Boton_Continuar.png" type="Texture" id=7]
 [ext_resource path="res://Escenas/BotonesMenu/BotonMenu.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objetos/Boton_SalirP.png" type="Texture" id=9]
+[ext_resource path="res://Escenas/GUI.tscn" type="PackedScene" id=10]
 
 [sub_resource type="SegmentShape2D" id=1]
 b = Vector2( 320, 0 )
@@ -79,6 +80,8 @@ position = Vector2( 214, 80 )
 
 [node name="PosInicial" type="Position2D" parent="."]
 position = Vector2( 200, 31 )
+
+[node name="GUI" parent="." instance=ExtResource( 10 )]
 
 [editable path="Btn_NuevoJuego"]
 [editable path="Btn_NuevoJuego/HitBox"]

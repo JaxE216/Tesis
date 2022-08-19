@@ -2,6 +2,11 @@ extends KinematicBody2D
 
 class_name Jugador
 
+signal diamanteRecogido(count)
+signal llaveRojaRecogida()
+signal llavePlateadaRecogida()
+signal llaveDoradaRecogida()
+
 const VEL_MAX = 200
 
 enum {
@@ -81,19 +86,15 @@ func estado_atacar(delta, banArmado):
 		estadoAnimacion.travel("atacar_CA")
 	
 func terminar_ataque():
-	print(get_colision())
-	if get_colision() != null:
-		colisionando = true
-		
+	print("Colisionando: " + str(colisionando))
 	if banArmado == true and colisionando == true:
+		print("Salud rama: " + str(saludRama))
 		saludRama = saludRama - 25
 		if saludRama == 0:
 			banArmado = false
-	print("Salud rama: " + str(saludRama))
+	
 	colisionando = false
 	estado = MOVER
-### No se detecta la colisión entre la rama y el enemigo por lo que no se puede 
-### restar daño a la rama cuando se  golpea a un enemigo
 
 
 func get_colision():
@@ -112,17 +113,26 @@ func recogerLlave(tipoLlave):
 	match tipoLlave:
 		'LlaveRoja', 'LlaveCaidaR':
 			llaveRoja = true
+			Checkpoints.ban_llaveR = true
+			emit_signal("llaveRojaRecogida")
 		'LlavePlata', 'LlaveCaidaP':
 			llavePlata = true
+			Checkpoints.ban_llaveP = true
+			emit_signal("llavePlateadaRecogida")
 		'LlaveDorada', 'LlaveCaidaD':
 			llaveDorada = true
+			Checkpoints.ban_llaveD = true
+			emit_signal("llaveDoradaRecogida")
 
 
 func _on_hurtBox_area_entered(area):
-	print('Salud jugador: ')
-	print(saludJugador)
-	if area.name == 'HitBoxEnemigo':
-		saludJugador = saludJugador - 10
+	print('Salud jugador: ' + str(saludJugador))
+	match(area.name):
+		'HitBoxEnemigo':
+			saludJugador = saludJugador - 10
+		'HitBoxDiamante':
+			Checkpoints.cont_diamantes = Checkpoints.cont_diamantes + 1
+			emit_signal("diamanteRecogido", Checkpoints.cont_diamantes)
 	print(saludJugador)
 	if saludJugador <= 0:
 		if Checkpoints.reaparicion:
@@ -133,8 +143,20 @@ func _on_hurtBox_area_entered(area):
 
 
 func _on_areaGolpeoCA_area_entered(area):
-	print(area.name)
-	if area.name == 'HitBoxEnemigo':
-		saludRama = saludRama - 25
-		if saludRama == 0:
-			banArmado = false
+	print('Golpeó con arma: ' + str(area.name))
+	colisionando = true
+	#if area.name == 'HitBoxEnemigo':
+		#saludRama = saludRama - 25
+		#if saludRama == 0:
+			#terminar_ataque()
+			#banArmado = false
+
+
+func _on_areaGolpeoSA_body_entered(body):
+	print('Golpeó sin arma: ' + str(body.name))
+	colisionando = true
+
+
+func _on_areaGolpeoCA_body_entered(body):
+	print('Golpeó con arma: ' + str(body.name))
+	colisionando = true
