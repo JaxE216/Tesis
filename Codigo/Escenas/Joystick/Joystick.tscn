@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Objetos/Joystick/Btn_Arriba.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Objetos/Joystick/Golpear_2.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Objetos/Joystick/Golpear.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Objetos/Joystick/Pausar_2.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Objetos/Joystick/Btn_Arriba_2.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Objetos/Joystick/Pausar.png" type="Texture" id=6]
 
 [node name="Joystick" type="CanvasLayer"]
 
@@ -49,3 +51,11 @@ scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 3 )
 pressed = ExtResource( 2 )
 action = "atacar"
+
+[node name="Pausar" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
+position = Vector2( 283, 2 )
+scale = Vector2( 0.0575, 0.0575 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 4 )
+action = "pausar"

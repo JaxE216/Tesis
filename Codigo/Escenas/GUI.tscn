@@ -11,5 +11,12 @@ pause_mode = 2
 visible = false
 
 [node name="Contadores" parent="." instance=ExtResource( 3 )]
+margin_right = -38.0
+margin_bottom = -147.0
 
 [node name="Joystick" parent="." instance=ExtResource( 2 )]
+
+[node name="Pausar" parent="Joystick" index="5"]
+position = Vector2( 278, 7 )
+
+[editable path="Joystick"]

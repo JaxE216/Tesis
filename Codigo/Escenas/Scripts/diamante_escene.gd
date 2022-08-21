@@ -12,6 +12,10 @@ func recoger():
 	recogido = true
 	Checkpoints.reaparicion = global_position
 	
+	SaveScript.game_data.reaparicion = Checkpoints.reaparicion
+	SaveScript.game_data.cont_diamantes = Checkpoints.cont_diamantes
+	SaveScript.save_data()
+	
 	get_node(".").queue_free()
 
 func get_class():

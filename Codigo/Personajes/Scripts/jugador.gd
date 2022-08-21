@@ -39,6 +39,10 @@ func _ready():
 	hitboxGolpeCA.vector_direccionGolpe = Vector2.LEFT
 	hitboxGolpeSA.vector_direccionGolpe = Vector2.LEFT
 	
+	llaveRoja = Checkpoints.ban_llaveR
+	llavePlata = Checkpoints.ban_llaveP
+	llaveDorada = Checkpoints.ban_llaveD
+	
 	if Checkpoints.reaparicion:
 		global_position = Checkpoints.reaparicion
 	else:
@@ -114,14 +118,26 @@ func recogerLlave(tipoLlave):
 		'LlaveRoja', 'LlaveCaidaR':
 			llaveRoja = true
 			Checkpoints.ban_llaveR = true
+			SaveScript.game_data.reaparicion = Checkpoints.reaparicion
+			SaveScript.game_data.ban_llaveR = Checkpoints.ban_llaveR
+			SaveScript.save_data()
+			
 			emit_signal("llaveRojaRecogida")
 		'LlavePlata', 'LlaveCaidaP':
 			llavePlata = true
 			Checkpoints.ban_llaveP = true
+			SaveScript.game_data.reaparicion = Checkpoints.reaparicion
+			SaveScript.game_data.ban_llaveP = Checkpoints.ban_llaveP
+			SaveScript.save_data()
+			
 			emit_signal("llavePlateadaRecogida")
 		'LlaveDorada', 'LlaveCaidaD':
 			llaveDorada = true
 			Checkpoints.ban_llaveD = true
+			SaveScript.game_data.reaparicion = Checkpoints.reaparicion
+			SaveScript.game_data.ban_llaveD = Checkpoints.ban_llaveD
+			SaveScript.save_data()
+			
 			emit_signal("llaveDoradaRecogida")
 
 

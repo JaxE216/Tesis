@@ -28,6 +28,8 @@ Label/styles/normal = null
 modulate = Color( 1, 1, 1, 0.666667 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = -58.0
+margin_bottom = -144.0
 script = ExtResource( 7 )
 
 [node name="Cont_Diamantes" type="NinePatchRect" parent="."]
@@ -61,9 +63,11 @@ text = "10"
 align = 2
 
 [node name="Cont_Llaves" type="NinePatchRect" parent="."]
-margin_left = 231.0
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -89.0
 margin_top = 9.0
-margin_right = 271.0
+margin_right = -49.0
 margin_bottom = 27.0
 texture = ExtResource( 3 )
 

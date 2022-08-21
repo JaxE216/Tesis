@@ -165,3 +165,6 @@ position = Vector2( 49, 420 )
 
 [node name="PosInicial" type="Position2D" parent="."]
 position = Vector2( 24, 417 )
+
+[editable path="Diamantes/arbolDiamante"]
+[editable path="Diamantes/arbolDiamante/HitBoxArbol"]

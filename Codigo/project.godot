@@ -93,6 +93,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Checkpoints="*res://Utilidades/Checkpoints.gd"
+SaveScript="*res://Escenas/Scripts/SaveScript.gd"
 
 [display]
 

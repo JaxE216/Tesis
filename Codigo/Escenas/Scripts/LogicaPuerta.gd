@@ -21,6 +21,9 @@ func _on_HitBox_body_entered(body):
 				if body.llaveRoja:
 					print('Se puede abrir puerta roja')
 					abrirPuerta(get_node("PuertaRed"), get_node("PuertaRedAbierta"), get_node("colisionPuerta"))
+					Checkpoints.reaparicion = global_position
+					SaveScript.game_data.reaparicion = Checkpoints.reaparicion
+					SaveScript.save_data()
 					
 					if puertaChiquitaR != null:
 						puertaChiquitaR.queue_free()
@@ -30,6 +33,9 @@ func _on_HitBox_body_entered(body):
 				if body.llaveDorada:
 					print('Se puede abrir puerta dorada')
 					abrirPuerta(get_node("PuertaGold"), get_node("PuertaGoldAbierta"), get_node("colisionPuerta"))
+					Checkpoints.reaparicion = global_position
+					SaveScript.game_data.reaparicion = Checkpoints.reaparicion
+					SaveScript.save_data()
 					
 					if puertaChiquitaD != null:
 						puertaChiquitaD.queue_free()
@@ -39,6 +45,9 @@ func _on_HitBox_body_entered(body):
 				if body.llavePlata:
 					print('Se puede abrir puerta plata')
 					abrirPuerta(get_node("PuertaSilver"), get_node("PuertaSilverAbierta"), get_node("colisionPuerta"))
+					Checkpoints.reaparicion = global_position
+					SaveScript.game_data.reaparicion = Checkpoints.reaparicion
+					SaveScript.save_data()
 					
 					if puertaChiquitaP != null:
 						puertaChiquitaP.queue_free()
