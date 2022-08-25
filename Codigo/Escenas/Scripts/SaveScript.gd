@@ -2,7 +2,16 @@ extends Node
 
 const SAVEFILE = "res://Savefile.save"
 
+"""
+Hacer pruebas iterando sobre los nodos del grupo de datos de cada nivel y
+guardarlos en estructuras dentro de la estructura level_data.
+
+Cuando esté guardado se tendrá que iterar sobre los datos y cargarlos cada vez
+que se inicie ese nivel.
+"""
+
 var game_data = {}
+var level_data = {}
 
 func _ready():
 	load_data()
