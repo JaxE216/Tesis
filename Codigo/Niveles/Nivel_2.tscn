@@ -125,16 +125,17 @@ shape = SubResource( 10 )
 
 [node name="Diamantes" type="Node2D" parent="."]
 
-[node name="Diamante_0" parent="Diamantes" instance=ExtResource( 5 )]
+[node name="Diamante_2_0" parent="Diamantes" instance=ExtResource( 5 )]
 position = Vector2( 29, 272 )
-frame = 3
 
-[node name="Diamante_1" parent="Diamantes" instance=ExtResource( 5 )]
+[node name="Diamante_2_1" parent="Diamantes" instance=ExtResource( 5 )]
 position = Vector2( 314, 258 )
-frame = 3
 
-[node name="arbolDiamante" parent="Diamantes" instance=ExtResource( 6 )]
+[node name="arbolDiamante_2_2" parent="Diamantes" instance=ExtResource( 6 )]
 position = Vector2( 536, 424 )
+
+[node name="DiamanteCaido" parent="Diamantes/arbolDiamante_2_2" index="3"]
+frame = 4
 
 [node name="LlaveDorada" parent="." instance=ExtResource( 9 )]
 position = Vector2( 920, 70 )
@@ -166,5 +167,5 @@ position = Vector2( 49, 420 )
 [node name="PosInicial" type="Position2D" parent="."]
 position = Vector2( 24, 417 )
 
-[editable path="Diamantes/arbolDiamante"]
-[editable path="Diamantes/arbolDiamante/HitBoxArbol"]
+[editable path="Diamantes/arbolDiamante_2_2"]
+[editable path="Diamantes/arbolDiamante_2_2/HitBoxArbol"]

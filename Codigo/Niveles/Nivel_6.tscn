@@ -60,21 +60,21 @@ position = Vector2( 1015.57, 566.71 )
 [node name="PuertaChiquitaD" parent="." instance=ExtResource( 16 )]
 position = Vector2( 1031.52, 118.685 )
 
-[node name="arbolDiamante" parent="." instance=ExtResource( 4 )]
+[node name="arbolDiamante_6_0" parent="." instance=ExtResource( 4 )]
 position = Vector2( 584, 344 )
 
-[node name="arbolDiamante2" parent="." instance=ExtResource( 4 )]
+[node name="arbolDiamante_6_1" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 24 )
 
-[node name="arbolDiamante3" parent="." instance=ExtResource( 4 )]
+[node name="arbolDiamante_6_2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 968, 24 )
 
 [node name="arbolLlaveD" parent="." instance=ExtResource( 8 )]
 position = Vector2( 404, 184 )
 
-[node name="Diamante_0" parent="." instance=ExtResource( 5 )]
+[node name="Diamante_6_4" parent="." instance=ExtResource( 5 )]
 position = Vector2( 49, 429 )
-frame = 4
+frame = 1
 
 [node name="limitesMapa" type="StaticBody2D" parent="."]
 

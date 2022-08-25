@@ -18,6 +18,9 @@ func _on_HitBox_body_exited(body):
 func _on_HitBox_area_entered(area):
 	match(botonName):
 		'Btn_NuevoJuego':
+			Checkpoints.vaciarDatos()
+			Checkpoints.cont_diamantes = 0
+			SaveScript.delete_data()
 			get_tree().change_scene("res://Niveles/Nivel_1.tscn")
 		'Btn_Continuar':
 			nivel = "res://Niveles/" + SaveScript.game_data.nivel

@@ -28,6 +28,7 @@ var llaveRoja = false
 var llavePlata = false
 var llaveDorada = false
 
+onready var nivel = get_node(".").get_parent().name
 onready var animacion = $AnimationPlayer
 onready var arbolAnimacion = $AnimationTree
 onready var estadoAnimacion = arbolAnimacion.get("parameters/playback")
@@ -43,7 +44,7 @@ func _ready():
 	llavePlata = Checkpoints.ban_llaveP
 	llaveDorada = Checkpoints.ban_llaveD
 	
-	if Checkpoints.reaparicion:
+	if Checkpoints.reaparicion and nivel != 'Menu':
 		global_position = Checkpoints.reaparicion
 	else:
 		global_position = get_parent().get_node("PosInicial").global_position

@@ -69,18 +69,17 @@ position = Vector2( 23.539, 390.824 )
 [node name="PuertaChiquitaP" parent="." instance=ExtResource( 16 )]
 position = Vector2( 887.484, 198.739 )
 
-[node name="Diamante_0" parent="." instance=ExtResource( 5 )]
-position = Vector2( 164, 543 )
-frame = 6
-
-[node name="arbolDiamante" parent="." instance=ExtResource( 4 )]
+[node name="arbolDiamante_7_0" parent="." instance=ExtResource( 4 )]
 position = Vector2( 24, 136 )
 
-[node name="arbolDiamante2" parent="." instance=ExtResource( 4 )]
+[node name="arbolDiamante_7_1" parent="." instance=ExtResource( 4 )]
 position = Vector2( 776, 552 )
 
-[node name="arbolDiamante3" parent="." instance=ExtResource( 4 )]
+[node name="arbolDiamante_7_2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 520, 360 )
+
+[node name="Diamante_7_3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 164, 543 )
 
 [node name="colisionesIndependientes" type="StaticBody2D" parent="."]
 

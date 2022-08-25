@@ -31,3 +31,19 @@ func save_data():
 	file.close()
 	
 	print('Guardado: ' + str(game_data))
+
+func delete_data():
+	var file = File.new()
+	file.open(SAVEFILE, File.WRITE)
+	game_data = {
+		"nivel" : "Nivel_1.tscn",
+		"cont_diamantes" : 0,
+		"ban_llaveR" : false,
+		"ban_llaveD" : false,
+		"ban_llaveP" : false,
+		"reaparicion" : null
+	}
+	file.store_var(game_data)
+	file.close()
+	
+	print('Eliminado: ' + str(game_data))
