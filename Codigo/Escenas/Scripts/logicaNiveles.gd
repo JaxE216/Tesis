@@ -2,6 +2,27 @@ extends Node2D
 
 onready var jugador = get_node("jugador")
 
+func _ready():
+	print('Info jugador: ' + str(SaveScript.game_data))
+	print('Info nivel: ' + str(SaveScript.level_data[get_node(".").name]))
+	for node in get_tree().get_nodes_in_group("Guardados"):
+		print("Clase: " + node.get_class())
+		if SaveScript.level_data[get_node(".").name][node.name]:
+			match(node.get_class()):
+				'Puerta':
+					match(node.name):
+						'PuertaRoja':
+							node.abrirPuerta(node.get_node("PuertaRed"), node.get_node("PuertaRedAbierta"), node.get_node("colisionPuerta"))
+						'PuertaDorada':
+							node.abrirPuerta(node.get_node("PuertaGold"), node.get_node("PuertaGoldAbierta"), node.get_node("colisionPuerta"))
+						'PuertaPlata':
+							node.abrirPuerta(node.get_node("PuertaSilver"), node.get_node("PuertaSilverAbierta"), node.get_node("colisionPuerta"))
+				'ArbolDiamante':
+					node.tirarDiamante()
+					node.get_node("DiamanteCaido").queue_free()
+				_:
+					node.queue_free()
+
 func _process(delta):
 	var colisionJugador = jugador.get_colision()
 	var nivel = get_node(".").name
@@ -10,8 +31,6 @@ func _process(delta):
 			if colisionJugador is Llave:
 				colisionJugador.recoger()
 			if colisionJugador is Puerta:
-				print(colisionJugador.tipoPuerta)
-				
 				match nivel:
 					'Nivel_1':
 						if colisionJugador.tipoPuerta == 'PuertaDorada' and colisionJugador.abierto:

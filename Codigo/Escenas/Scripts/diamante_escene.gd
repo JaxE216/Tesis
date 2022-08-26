@@ -5,8 +5,6 @@ class_name Diamante
 var recogido
 var enArbol = false
 
-
-# hasta acá son experimentos
 func recoger():
 	print('Diamante recogido')
 	recogido = true
@@ -14,6 +12,12 @@ func recoger():
 	
 	SaveScript.game_data.reaparicion = Checkpoints.reaparicion
 	SaveScript.game_data.cont_diamantes = Checkpoints.cont_diamantes
+	
+	if 'Nivel' in get_node(".").get_parent().name:
+		SaveScript.level_data[get_node(".").get_parent().name][get_node(".").name] = true
+	else:
+		SaveScript.level_data[get_node(".").get_parent().get_parent().name][get_node(".").get_parent().name] = true
+	
 	SaveScript.save_data()
 	
 	get_node(".").queue_free()

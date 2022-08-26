@@ -121,19 +121,17 @@ position = Vector2( 23.431, 438.904 )
 
 [node name="Diamante_3_0" parent="Diamantes" instance=ExtResource( 6 )]
 position = Vector2( 439, 130 )
-frame = 3
 
 [node name="Diamante_3_1" parent="Diamantes" instance=ExtResource( 6 )]
 position = Vector2( 24, 583 )
-frame = 3
 
 [node name="arbolDiamante_3_2" parent="Diamantes" instance=ExtResource( 5 )]
 position = Vector2( 312, 408 )
 
-[node name="Arboles" type="Node2D" parent="."]
-
-[node name="arbolDiamante2" parent="Arboles" instance=ExtResource( 5 )]
+[node name="arbolDiamante_3_3" parent="Diamantes" instance=ExtResource( 5 )]
 position = Vector2( 952, 360 )
+
+[node name="Arboles" type="Node2D" parent="."]
 
 [node name="ArbolRama" parent="Arboles" instance=ExtResource( 7 )]
 position = Vector2( 313, 280 )

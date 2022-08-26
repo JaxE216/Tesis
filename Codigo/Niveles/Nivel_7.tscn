@@ -80,6 +80,7 @@ position = Vector2( 520, 360 )
 
 [node name="Diamante_7_3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 164, 543 )
+frame = 3
 
 [node name="colisionesIndependientes" type="StaticBody2D" parent="."]
 

@@ -67,11 +67,11 @@ show_collision = true
 format = 1
 tile_data = PoolIntArray( 2883710, 1, 0, 2883712, 0, 0, 2883714, 1, 0, 3014782, 0, 0, 3145854, 1, 0, 3276926, 0, 0, 3407998, 1, 0, 3539070, 0, 0, 3670142, 1, 0 )
 
-[node name="PuertaChiquitaP" parent="." groups=["Guardado_N1"] instance=ExtResource( 14 )]
+[node name="PuertaChiquitaP" parent="." groups=["Guardados"] instance=ExtResource( 14 )]
 position = Vector2( 951.634, 486.442 )
 z_index = 1
 
-[node name="PuertaChiquitaR" parent="." groups=["Guardado_N1"] instance=ExtResource( 14 )]
+[node name="PuertaChiquitaR" parent="." groups=["Guardados"] instance=ExtResource( 14 )]
 position = Vector2( 871.496, 486.442 )
 z_index = 1
 
@@ -102,38 +102,34 @@ shape = SubResource( 61 )
 position = Vector2( 0, 530 )
 shape = SubResource( 62 )
 
-[node name="Diamantes" type="Node2D" parent="."]
-
-[node name="Diamante_0" parent="Diamantes" groups=["Guardado_N1"] instance=ExtResource( 5 )]
+[node name="Diamante_1_0" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 274, 20 )
-frame = 3
+frame = 1
 
-[node name="Diamante_1" parent="Diamantes" groups=["Guardado_N1"] instance=ExtResource( 5 )]
+[node name="Diamante_1_1" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 911, 104 )
-frame = 3
+frame = 1
 
-[node name="Diamante_2" parent="Diamantes" groups=["Guardado_N1"] instance=ExtResource( 5 )]
+[node name="Diamante_1_2" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 507, 509 )
-frame = 3
+frame = 1
 
-[node name="Llaves" type="Node2D" parent="."]
-
-[node name="LlaveDorada" parent="Llaves" groups=["Guardado_N1"] instance=ExtResource( 7 )]
+[node name="LlaveDorada" parent="." groups=["Guardados"] instance=ExtResource( 7 )]
 position = Vector2( 871, 506 )
 
-[node name="LlaveRoja" parent="Llaves" groups=["Guardado_N1"] instance=ExtResource( 8 )]
+[node name="LlaveRoja" parent="." groups=["Guardados"] instance=ExtResource( 8 )]
 position = Vector2( 952, 507 )
 
-[node name="LlavePlata" parent="Llaves" groups=["Guardado_N1"] instance=ExtResource( 9 )]
+[node name="LlavePlata" parent="." groups=["Guardados"] instance=ExtResource( 9 )]
 position = Vector2( 895, 446 )
 
-[node name="PuertaDorada" parent="." groups=["Guardado_N1"] instance=ExtResource( 10 )]
+[node name="PuertaDorada" parent="." groups=["Guardados"] instance=ExtResource( 10 )]
 position = Vector2( 1040, 413 )
 
-[node name="PuertaRoja" parent="." groups=["Guardado_N1"] instance=ExtResource( 12 )]
+[node name="PuertaRoja" parent="." groups=["Guardados"] instance=ExtResource( 12 )]
 position = Vector2( 1040, 441 )
 
-[node name="PuertaPlata" parent="." groups=["Guardado_N1"] instance=ExtResource( 13 )]
+[node name="PuertaPlata" parent="." groups=["Guardados"] instance=ExtResource( 13 )]
 position = Vector2( 1040, 469 )
 
 [node name="Enemigo" parent="." instance=ExtResource( 15 )]
