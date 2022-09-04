@@ -20,6 +20,15 @@ func _ready():
 				'ArbolDiamante':
 					node.tirarDiamante()
 					node.get_node("DiamanteCaido").queue_free()
+				'ArbolLlave':
+					node.tirarLlave()
+					match(node.name):
+						"ArbolLlaveD":
+							node.get_node("LlaveCaidaD").queue_free()
+						"ArbolLlaveP":
+							node.get_node("LlaveCaidaP").queue_free()
+						"ArbolLlaveR":
+							node.get_node("LlaveCaidaR").queue_free()
 				_:
 					node.queue_free()
 

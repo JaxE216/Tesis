@@ -111,64 +111,60 @@ shape = SubResource( 5 )
 position = Vector2( -1, 607 )
 shape = SubResource( 6 )
 
-[node name="PuertaChiquitaP" parent="." instance=ExtResource( 19 )]
+[node name="PuertaChiquitaP" parent="." groups=["Guardados"] instance=ExtResource( 19 )]
 position = Vector2( 775.467, 134.78 )
 
-[node name="PuertaChiquitaD" parent="." instance=ExtResource( 19 )]
+[node name="PuertaChiquitaD" parent="." groups=["Guardados"] instance=ExtResource( 19 )]
 position = Vector2( 23.431, 438.904 )
 
-[node name="Diamantes" type="Node2D" parent="."]
-
-[node name="Diamante_3_0" parent="Diamantes" instance=ExtResource( 6 )]
+[node name="Diamante_3_0" parent="." groups=["Guardados"] instance=ExtResource( 6 )]
 position = Vector2( 439, 130 )
+frame = 1
 
-[node name="Diamante_3_1" parent="Diamantes" instance=ExtResource( 6 )]
+[node name="Diamante_3_1" parent="." groups=["Guardados"] instance=ExtResource( 6 )]
 position = Vector2( 24, 583 )
+frame = 1
 
-[node name="arbolDiamante_3_2" parent="Diamantes" instance=ExtResource( 5 )]
+[node name="arbolDiamante_3_2" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 312, 408 )
 
-[node name="arbolDiamante_3_3" parent="Diamantes" instance=ExtResource( 5 )]
+[node name="arbolDiamante_3_3" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 952, 360 )
 
-[node name="Arboles" type="Node2D" parent="."]
-
-[node name="ArbolRama" parent="Arboles" instance=ExtResource( 7 )]
+[node name="ArbolRama" parent="." instance=ExtResource( 7 )]
 position = Vector2( 313, 280 )
 
-[node name="ArbolRama2" parent="Arboles" instance=ExtResource( 7 )]
+[node name="ArbolRama2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 185, 280 )
 
-[node name="ArbolRama3" parent="Arboles" instance=ExtResource( 7 )]
+[node name="ArbolRama3" parent="." instance=ExtResource( 7 )]
 position = Vector2( 649, 120 )
 
-[node name="ArbolRama4" parent="Arboles" instance=ExtResource( 7 )]
+[node name="ArbolRama4" parent="." instance=ExtResource( 7 )]
 position = Vector2( 761, 312 )
 
-[node name="ArbolRama5" parent="Arboles" instance=ExtResource( 7 )]
+[node name="ArbolRama5" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1017, 216 )
 
-[node name="ArbolRama6" parent="Arboles" instance=ExtResource( 7 )]
+[node name="ArbolRama6" parent="." instance=ExtResource( 7 )]
 position = Vector2( 489, 568 )
 
-[node name="Llaves" type="Node2D" parent="."]
-
-[node name="LlaveDorada" parent="Llaves" instance=ExtResource( 10 )]
+[node name="LlaveDorada" parent="." groups=["Guardados"] instance=ExtResource( 10 )]
 position = Vector2( 345, 26 )
 
-[node name="LlavePlata" parent="Llaves" instance=ExtResource( 9 )]
+[node name="LlavePlata" parent="." groups=["Guardados"] instance=ExtResource( 9 )]
 position = Vector2( 23, 458 )
 
-[node name="LlaveRoja" parent="Llaves" instance=ExtResource( 11 )]
+[node name="LlaveRoja" parent="." groups=["Guardados"] instance=ExtResource( 11 )]
 position = Vector2( 775, 118 )
 
-[node name="PuertaRoja" parent="." instance=ExtResource( 13 )]
+[node name="PuertaRoja" parent="." groups=["Guardados"] instance=ExtResource( 13 )]
 position = Vector2( 16, 85 )
 
-[node name="PuertaPlata" parent="." instance=ExtResource( 14 )]
+[node name="PuertaPlata" parent="." groups=["Guardados"] instance=ExtResource( 14 )]
 position = Vector2( 16, 113 )
 
-[node name="PuertaDorada" parent="." instance=ExtResource( 15 )]
+[node name="PuertaDorada" parent="." groups=["Guardados"] instance=ExtResource( 15 )]
 position = Vector2( 16, 141 )
 
 [node name="PuenteVertical_SM" parent="." instance=ExtResource( 16 )]

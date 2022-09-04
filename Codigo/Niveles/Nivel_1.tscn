@@ -104,15 +104,12 @@ shape = SubResource( 62 )
 
 [node name="Diamante_1_0" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 274, 20 )
-frame = 1
 
 [node name="Diamante_1_1" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 911, 104 )
-frame = 1
 
 [node name="Diamante_1_2" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 507, 509 )
-frame = 1
 
 [node name="LlaveDorada" parent="." groups=["Guardados"] instance=ExtResource( 7 )]
 position = Vector2( 871, 506 )

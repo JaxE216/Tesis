@@ -20,5 +20,4 @@ func tirarDiamante():
 
 func _on_HitBoxArbol_area_entered(area):
 	if area.name != 'HitBoxDiamante' and area.name != 'hurtBoxJugador':
-#		yield(get_tree().create_timer(0.6), "timeout")
 		tirarDiamante()

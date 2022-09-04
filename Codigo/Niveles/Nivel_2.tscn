@@ -125,40 +125,40 @@ shape = SubResource( 10 )
 
 [node name="Diamante_2_0" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 29, 272 )
-frame = 2
+frame = 4
 
 [node name="Diamante_2_1" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 314, 258 )
-frame = 2
+frame = 4
 
 [node name="arbolDiamante_2_2" parent="." groups=["Guardados"] instance=ExtResource( 6 )]
 position = Vector2( 536, 424 )
 
 [node name="DiamanteCaido" parent="arbolDiamante_2_2" index="3"]
-frame = 1
+frame = 3
 
-[node name="LlaveDorada" parent="." instance=ExtResource( 9 )]
+[node name="LlaveDorada" parent="." groups=["Guardados"] instance=ExtResource( 9 )]
 position = Vector2( 920, 70 )
 
-[node name="LlavePlata" parent="." instance=ExtResource( 8 )]
+[node name="LlavePlata" parent="." groups=["Guardados"] instance=ExtResource( 8 )]
 position = Vector2( 376, 68 )
 
-[node name="LlaveRoja" parent="." instance=ExtResource( 10 )]
+[node name="LlaveRoja" parent="." groups=["Guardados"] instance=ExtResource( 10 )]
 position = Vector2( 492, 131 )
 
-[node name="PuertaDorada" parent="." instance=ExtResource( 12 )]
+[node name="PuertaDorada" parent="." groups=["Guardados"] instance=ExtResource( 12 )]
 position = Vector2( 448, 28 )
 
-[node name="PuertaPlata" parent="." instance=ExtResource( 14 )]
+[node name="PuertaPlata" parent="." groups=["Guardados"] instance=ExtResource( 14 )]
 position = Vector2( 448, 56 )
 
-[node name="PuertaRoja" parent="." instance=ExtResource( 13 )]
+[node name="PuertaRoja" parent="." groups=["Guardados"] instance=ExtResource( 13 )]
 position = Vector2( 448, 84 )
 
-[node name="PuertaChiquitaR" parent="." instance=ExtResource( 16 )]
+[node name="PuertaChiquitaR" parent="." groups=["Guardados"] instance=ExtResource( 16 )]
 position = Vector2( 375.551, 86.637 )
 
-[node name="PuertaChiquitaP" parent="." instance=ExtResource( 16 )]
+[node name="PuertaChiquitaP" parent="." groups=["Guardados"] instance=ExtResource( 16 )]
 position = Vector2( 919.529, 86.7 )
 
 [node name="jugador" parent="." instance=ExtResource( 3 )]

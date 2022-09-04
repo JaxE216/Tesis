@@ -2,11 +2,6 @@ extends Node
 
 const SAVEFILE = "res://Savefile.save"
 
-"""
-Guardar datos de llaves y puertas para los niveles restantes con la misma
-lógica del nivel 1 y 2
-"""
-
 var game_data = {}
 var level_data = {}
 
@@ -41,7 +36,98 @@ func load_data():
 			"Nivel_2" : {
 				"Diamante_2_0" : false,
 				"Diamante_2_1" : false,
-				"arbolDiamante_2_2" : false
+				"arbolDiamante_2_2" : false,
+				"LlaveDorada" : false,
+				"LlaveRoja" : false,
+				"LlavePlata" : false,
+				"PuertaChiquitaP" : false,
+				"PuertaChiquitaR" : false,
+				"PuertaDorada" : false,
+				"PuertaRoja" : false,
+				"PuertaPlata" : false
+			},
+			"Nivel_3" : {
+				"Diamante_3_0" : false,
+				"Diamante_3_1" : false,
+				"arbolDiamante_3_2" : false,
+				"arbolDiamante_3_3" : false,
+				"LlaveDorada" : false,
+				"LlaveRoja" : false,
+				"LlavePlata" : false,
+				"PuertaChiquitaP" : false,
+				"PuertaChiquitaD" : false,
+				"PuertaDorada" : false,
+				"PuertaRoja" : false,
+				"PuertaPlata" : false
+			},
+			"Nivel_4" : {
+				"Diamante_4_0" : false,
+				"Diamante_4_1" : false,
+				"arbolDiamante_4_2" : false,
+				"LlaveDorada" : false,
+				"LlaveRoja" : false,
+				"LlavePlata" : false,
+				"PuertaChiquitaP" : false,
+				"PuertaChiquitaD" : false,
+				"PuertaDorada" : false,
+				"PuertaRoja" : false,
+				"PuertaPlata" : false
+			},
+			"Nivel_5" : {
+				"arbolDiamante_5_0" : false,
+				"Diamante_5_1" : false,
+				"arbolDiamante_5_2" : false,
+				"LlaveDorada" : false,
+				"LlavePlata" : false,
+				"arbolLlaveD" : false,
+				"PuertaChiquitaP" : false,
+				"PuertaChiquitaD" : false,
+				"PuertaDorada" : false,
+				"PuertaRoja" : false,
+				"PuertaPlata" : false
+			},
+			"Nivel_6" : {
+				"arbolDiamante_6_0" : false,
+				"arbolDiamante_6_1" : false,
+				"arbolDiamante_6_2" : false,
+				"Diamante_6_3" : false,
+				"LlaveDorada" : false,
+				"LlavePlata" : false,
+				"arbolLlaveD" : false,
+				"PuertaChiquitaP" : false,
+				"PuertaChiquitaD" : false,
+				"PuertaDorada" : false,
+				"PuertaRoja" : false,
+				"PuertaPlata" : false
+			},
+			"Nivel_7" : {
+				"arbolDiamante_7_0" : false,
+				"arbolDiamante_7_1" : false,
+				"arbolDiamante_7_2" : false,
+				"Diamante_7_3" : false,
+				"LlaveDorada" : false,
+				"LlavePlata" : false,
+				"arbolLlaveD" : false,
+				"PuertaChiquitaP" : false,
+				"PuertaChiquitaD" : false,
+				"PuertaDorada" : false,
+				"PuertaRoja" : false,
+				"PuertaPlata" : false
+			},
+			"Nivel_8" : {
+				"arbolDiamante_8_0" : false,
+				"arbolDiamante_8_1" : false,
+				"arbolDiamante_8_2" : false,
+				"arbolDiamante_8_3" : false,
+				"arbolDiamante_8_4" : false,
+				"LlaveDorada" : false,
+				"LlavePlata" : false,
+				"arbolLlaveD" : false,
+				"PuertaChiquitaP" : false,
+				"PuertaChiquitaD" : false,
+				"PuertaDorada" : false,
+				"PuertaRoja" : false,
+				"PuertaPlata" : false
 			}
 		}
 		save_data()
@@ -85,7 +171,98 @@ func delete_data():
 		"Nivel_2" : {
 			"Diamante_2_0" : false,
 			"Diamante_2_1" : false,
-			"arbolDiamante_2_2" : false
+			"arbolDiamante_2_2" : false,
+			"LlaveDorada" : false,
+			"LlaveRoja" : false,
+			"LlavePlata" : false,
+			"PuertaChiquitaP" : false,
+			"PuertaChiquitaR" : false,
+			"PuertaDorada" : false,
+			"PuertaRoja" : false,
+			"PuertaPlata" : false
+		},
+		"Nivel_3" : {
+			"Diamante_3_0" : false,
+			"Diamante_3_1" : false,
+			"arbolDiamante_3_2" : false,
+			"arbolDiamante_3_3" : false,
+			"LlaveDorada" : false,
+			"LlaveRoja" : false,
+			"LlavePlata" : false,
+			"PuertaChiquitaP" : false,
+			"PuertaChiquitaD" : false,
+			"PuertaDorada" : false,
+			"PuertaRoja" : false,
+			"PuertaPlata" : false
+		},
+		"Nivel_4" : {
+			"Diamante_4_0" : false,
+			"Diamante_4_1" : false,
+			"arbolDiamante_4_2" : false,
+			"LlaveDorada" : false,
+			"LlaveRoja" : false,
+			"LlavePlata" : false,
+			"PuertaChiquitaP" : false,
+			"PuertaChiquitaD" : false,
+			"PuertaDorada" : false,
+			"PuertaRoja" : false,
+			"PuertaPlata" : false
+		},
+		"Nivel_5" : {
+			"arbolDiamante_5_0" : false,
+			"Diamante_5_1" : false,
+			"arbolDiamante_5_2" : false,
+			"LlaveDorada" : false,
+			"LlavePlata" : false,
+			"arbolLlaveD" : false,
+			"PuertaChiquitaP" : false,
+			"PuertaChiquitaD" : false,
+			"PuertaDorada" : false,
+			"PuertaRoja" : false,
+			"PuertaPlata" : false
+		},
+		"Nivel_6" : {
+			"arbolDiamante_6_0" : false,
+			"arbolDiamante_6_1" : false,
+			"arbolDiamante_6_2" : false,
+			"Diamante_6_3" : false,
+			"LlaveDorada" : false,
+			"LlavePlata" : false,
+			"arbolLlaveD" : false,
+			"PuertaChiquitaP" : false,
+			"PuertaChiquitaD" : false,
+			"PuertaDorada" : false,
+			"PuertaRoja" : false,
+			"PuertaPlata" : false
+		},
+		"Nivel_7" : {
+			"arbolDiamante_7_0" : false,
+			"arbolDiamante_7_1" : false,
+			"arbolDiamante_7_2" : false,
+			"Diamante_7_3" : false,
+			"LlaveDorada" : false,
+			"LlavePlata" : false,
+			"arbolLlaveD" : false,
+			"PuertaChiquitaP" : false,
+			"PuertaChiquitaD" : false,
+			"PuertaDorada" : false,
+			"PuertaRoja" : false,
+			"PuertaPlata" : false
+		},
+		"Nivel_8" : {
+			"arbolDiamante_8_0" : false,
+			"arbolDiamante_8_1" : false,
+			"arbolDiamante_8_2" : false,
+			"arbolDiamante_8_3" : false,
+			"arbolDiamante_8_4" : false,
+			"LlaveDorada" : false,
+			"LlavePlata" : false,
+			"arbolLlaveD" : false,
+			"PuertaChiquitaP" : false,
+			"PuertaChiquitaD" : false,
+			"PuertaDorada" : false,
+			"PuertaRoja" : false,
+			"PuertaPlata" : false
 		}
 	}
 	file.store_var(game_data)
