@@ -119,11 +119,9 @@ position = Vector2( 23.431, 438.904 )
 
 [node name="Diamante_3_0" parent="." groups=["Guardados"] instance=ExtResource( 6 )]
 position = Vector2( 439, 130 )
-frame = 1
 
 [node name="Diamante_3_1" parent="." groups=["Guardados"] instance=ExtResource( 6 )]
 position = Vector2( 24, 583 )
-frame = 1
 
 [node name="arbolDiamante_3_2" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 312, 408 )

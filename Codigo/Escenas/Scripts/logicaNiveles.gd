@@ -21,13 +21,16 @@ func _ready():
 					node.tirarDiamante()
 					node.get_node("DiamanteCaido").queue_free()
 				'ArbolLlave':
-					node.tirarLlave()
+					print(node.name)
 					match(node.name):
-						"ArbolLlaveD":
+						"arbolLlaveD":
+							node.tirarLlave("LlaveCaidaD", "ArbolLlaveD")
 							node.get_node("LlaveCaidaD").queue_free()
-						"ArbolLlaveP":
+						"arbolLlaveP":
+							node.tirarLlave("LlaveCaidaP", "ArbolLlaveP")
 							node.get_node("LlaveCaidaP").queue_free()
-						"ArbolLlaveR":
+						"arbolLlaveR":
+							node.tirarLlave("LlaveCaidaR", "ArbolLlaveR")
 							node.get_node("LlaveCaidaR").queue_free()
 				_:
 					node.queue_free()
@@ -84,7 +87,7 @@ func _process(delta):
 							
 							get_tree().change_scene("res://Niveles/Nivel_7.tscn")
 					'Nivel_7':
-						if colisionJugador.tipoPuerta == 'PuertaDorada' and colisionJugador.abierto:
+						if colisionJugador.tipoPuerta == 'PuertaRoja' and colisionJugador.abierto:
 							reiniciar_datos()
 							SaveScript.game_data.nivel = "Nivel_8.tscn"
 							SaveScript.save_data()

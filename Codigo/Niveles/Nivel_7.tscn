@@ -117,7 +117,7 @@ position = Vector2( 520, 360 )
 
 [node name="Diamante_7_3" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 164, 543 )
-frame = 2
+frame = 6
 
 [node name="ArbolRama" parent="." instance=ExtResource( 17 )]
 position = Vector2( 249, 152 )
@@ -169,13 +169,13 @@ position = Vector2( 958, 285 )
 [node name="jugador" parent="." instance=ExtResource( 6 )]
 position = Vector2( 21, 206 )
 
-[node name="PuertaRoja" parent="." groups=["Guardados"] instance=ExtResource( 12 )]
+[node name="PuertaDorada" parent="." groups=["Guardados"] instance=ExtResource( 14 )]
 position = Vector2( 1040, 468 )
 
 [node name="PuertaPlata" parent="." groups=["Guardados"] instance=ExtResource( 13 )]
 position = Vector2( 1040, 496 )
 
-[node name="PuertaDorada" parent="." groups=["Guardados"] instance=ExtResource( 14 )]
+[node name="PuertaRoja" parent="." groups=["Guardados"] instance=ExtResource( 12 )]
 position = Vector2( 1040, 524 )
 
 [node name="objsPuerta" type="TileMap" parent="."]
@@ -186,4 +186,4 @@ format = 1
 tile_data = PoolIntArray( 3604606, 1, 0, 3735678, 0, 0, 3866750, 1, 0, 3997822, 0, 0, 4128894, 1, 0, 4259966, 0, 0, 4259968, 1, 0, 4259970, 0, 0 )
 
 [node name="PosInicial" type="Position2D" parent="."]
-position = Vector2( 40, 202 )
+position = Vector2( 24, 202 )

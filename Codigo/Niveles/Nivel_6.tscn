@@ -91,6 +91,7 @@ position = Vector2( 404, 184 )
 
 [node name="Diamante_6_3" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 49, 429 )
+frame = 3
 
 [node name="ArbolRama" parent="." instance=ExtResource( 17 )]
 position = Vector2( 665, 520 )
@@ -165,4 +166,4 @@ format = 1
 tile_data = PoolIntArray( 1507454, 1, 0, 1638526, 0, 0, 1769598, 1, 0, 1900670, 0, 0, 2031742, 1, 0, 2162814, 0, 0, 2162816, 1, 0, 2162818, 0, 0 )
 
 [node name="PosInicial" type="Position2D" parent="."]
-position = Vector2( 483, 175 )
+position = Vector2( 824, 590 )

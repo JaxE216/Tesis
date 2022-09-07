@@ -8,7 +8,7 @@
 [ext_resource path="res://Personajes/Jugador.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Escenas/LlavePlata.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Escenas/LlaveDorada.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Escenas/ArbolLlaveD.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Escenas/ArbolLlaveR.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Niveles/tilesPuerta.tres" type="TileSet" id=10]
 [ext_resource path="res://Escenas/Puerta_Red.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Escenas/Puerta_Silver.tscn" type="PackedScene" id=12]
@@ -84,7 +84,7 @@ position = Vector2( 536, 38.628 )
 
 [node name="Diamante_5_1" parent="." groups=["Guardados"] instance=ExtResource( 5 )]
 position = Vector2( 887, 17 )
-frame = 4
+frame = 1
 
 [node name="arbolDiamante_5_2" parent="." groups=["Guardados"] instance=ExtResource( 4 )]
 position = Vector2( 716, 446 )
@@ -179,8 +179,11 @@ position = Vector2( 559, 563 )
 [node name="Enemigo9" parent="Enemigos" instance=ExtResource( 17 )]
 position = Vector2( 259, 514 )
 
-[node name="arbolLlaveD" parent="." groups=["Guardados"] instance=ExtResource( 9 )]
+[node name="arbolLlaveR" parent="." groups=["Guardados"] instance=ExtResource( 9 )]
 position = Vector2( 1026, 26 )
 
 [node name="jugador" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1027, 451 )
+
+[node name="PosInicial" type="Position2D" parent="."]
+position = Vector2( 1027, 447 )

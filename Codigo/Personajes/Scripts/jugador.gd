@@ -74,7 +74,7 @@ func estado_mover(delta):
 		
 		estadoAnimacion.travel("correr")
 		
-		velocidad = vector_entrada * 64
+		velocidad = vector_entrada * 64 * 2.5
 	else:
 		estadoAnimacion.travel("quieto")
 		velocidad = Vector2.ZERO * delta

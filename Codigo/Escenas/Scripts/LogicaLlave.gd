@@ -13,7 +13,11 @@ func _ready():
 func recoger(body):
 	if body.name == 'jugador':
 		Checkpoints.reaparicion = global_position
-		SaveScript.level_data[get_node(".").get_parent().name][get_node(".").name] = true
+		
+		if 'Nivel' in get_node(".").get_parent().name:
+			SaveScript.level_data[get_node(".").get_parent().name][get_node(".").name] = true
+		else:
+			SaveScript.level_data[get_node(".").get_parent().get_parent().name][get_node(".").get_parent().name] = true
 		
 		body.recogerLlave(tipoLlave)
 		

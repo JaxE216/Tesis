@@ -27,7 +27,7 @@ polygon = PoolVector2Array( -17, -11, -7, -22, -1, -24, 9, -21, 17, -11, 19, 0, 
 [node name="DiamanteCaido" parent="." instance=ExtResource( 3 )]
 visible = false
 position = Vector2( 0, 24 )
-frame = 2
+frame = 0
 
 [node name="HitBoxArbol" parent="." instance=ExtResource( 5 )]
 

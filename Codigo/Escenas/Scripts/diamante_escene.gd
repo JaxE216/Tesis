@@ -20,12 +20,14 @@ func recoger():
 	
 	SaveScript.save_data()
 	
-	get_node(".").queue_free()
+	if !enArbol:
+		get_node(".").queue_free()
 
 func get_class():
 	return "Diamante"
 
 func _on_HitBoxDiamante_area_entered(area):
-	print(area.name)
 	if area.name == 'hurtBoxJugador':
 		recoger()
+		# if get_node(".").get_parent()
+		
