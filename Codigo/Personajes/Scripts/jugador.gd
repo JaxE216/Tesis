@@ -115,7 +115,8 @@ func terminar_ataque():
 		emit_signal("mostrarSaludRama", Checkpoints.rama)
 	colisionando = false
 	estado = MOVER
-
+### No se detecta la colisión entre la rama y el enemigo por lo que no se puede 
+### restar daño a la rama cuando se  golpea a un enemigo
 
 func get_colision():
 	for i in get_slide_count():

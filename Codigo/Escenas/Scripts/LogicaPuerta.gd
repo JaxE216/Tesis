@@ -46,6 +46,7 @@ func _on_HitBox_body_entered(body):
 						puertaChiquitaD.queue_free()
 					
 					SaveScript.save_data()
+          
 				else:
 					print('No se puede abrir puerta dorada')
 			'PuertaPlata':
@@ -61,6 +62,7 @@ func _on_HitBox_body_entered(body):
 						puertaChiquitaP.queue_free()
 					
 					SaveScript.save_data()
+          
 				else:
 					print('No se puede abrir puerta plata')
 
