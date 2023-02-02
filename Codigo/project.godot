@@ -15,11 +15,21 @@ _global_script_classes=[ {
 "path": "res://Escenas/Scripts/ArbolDiamante.gd"
 }, {
 "base": "StaticBody2D",
+"class": "ArbolLlave",
+"language": "GDScript",
+"path": "res://Escenas/Scripts/ArbolLlave.gd"
+}, {
+"base": "StaticBody2D",
 "class": "ArbolRama",
 "language": "GDScript",
 "path": "res://Escenas/Scripts/ArbolRama.gd"
 }, {
-"base": "RigidBody2D",
+"base": "StaticBody2D",
+"class": "BotonPuente",
+"language": "GDScript",
+"path": "res://Escenas/Scripts/LogicaBotonPuente.gd"
+}, {
+"base": "AnimatedSprite",
 "class": "Diamante",
 "language": "GDScript",
 "path": "res://Escenas/Scripts/diamante_escene.gd"
@@ -34,31 +44,56 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://experimentos/JugadorTest.gd"
 }, {
-"base": "RigidBody2D",
+"base": "Sprite",
 "class": "Llave",
 "language": "GDScript",
 "path": "res://Escenas/Scripts/LogicaLlave.gd"
 }, {
-"base": "RigidBody2D",
+"base": "Sprite",
+"class": "LlaveCaida",
+"language": "GDScript",
+"path": "res://Escenas/Scripts/llaveCaida.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Puerta",
+"language": "GDScript",
+"path": "res://Escenas/Scripts/LogicaPuerta.gd"
+}, {
+"base": "Sprite",
 "class": "Rama",
 "language": "GDScript",
 "path": "res://Escenas/Scripts/Rama.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "enemigo",
+"language": "GDScript",
+"path": "res://Personajes/Scripts/enemigo.gd"
 } ]
 _global_script_class_icons={
 "ArbolDiamante": "",
+"ArbolLlave": "",
 "ArbolRama": "",
+"BotonPuente": "",
 "Diamante": "",
 "Jugador": "",
 "JugadorTest": "",
 "Llave": "",
-"Rama": ""
+"LlaveCaida": "",
+"Puerta": "",
+"Rama": "",
+"enemigo": ""
 }
 
 [application]
 
-config/name="TestNiveles"
-run/main_scene="res://Niveles/Nivel_1.tscn"
+config/name="PrototipoTesis"
+run/main_scene="res://Niveles/Menu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Checkpoints="*res://Utilidades/Checkpoints.gd"
+SaveScript="*res://Escenas/Scripts/SaveScript.gd"
 
 [display]
 
@@ -103,6 +138,15 @@ atacar={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
+pausar={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [physics]
 

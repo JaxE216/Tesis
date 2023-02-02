@@ -31,7 +31,7 @@ segments = PoolVector2Array( 0, 0, 16, 0, 16, 0, 16, 2.81149, 16, 2.81149, 16, 5
 segments = PoolVector2Array( 0, 16, 16, 0, 16, 0, 16, 16, 16, 16, 0, 16, 0, 16, 0, 16 )
 
 [sub_resource type="ConcavePolygonShape2D" id=42]
-segments = PoolVector2Array( 0, 0, 16, 0, 16, 0, 16, 4.22752, 16, 4.22752, 0.357704, 4.42133, 0.357704, 4.42133, 0, 0 )
+segments = PoolVector2Array( 0, 0, 16, 0, 16, 0, 16, 5.42758, 16, 5.42758, 0, 5.42758, 0, 5.42758, 0, 0 )
 
 [sub_resource type="ConcavePolygonShape2D" id=39]
 segments = PoolVector2Array( 0, 0, 16, 16, 16, 16, 16, 16, 16, 16, 0, 16, 0, 16, 0, 0 )
