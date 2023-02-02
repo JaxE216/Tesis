@@ -106,4 +106,3 @@ func reiniciar_datos():
 	SaveScript.game_data.ban_llaveR = Checkpoints.ban_llaveR
 	SaveScript.game_data.ban_llaveD = Checkpoints.ban_llaveD
 	SaveScript.game_data.ban_llaveP = Checkpoints.ban_llaveP
-

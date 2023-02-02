@@ -30,4 +30,3 @@ func _on_HitBoxDiamante_area_entered(area):
 	if area.name == 'hurtBoxJugador':
 		recoger()
 		# if get_node(".").get_parent()
-		

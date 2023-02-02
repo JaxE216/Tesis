@@ -19,7 +19,7 @@ func recoger(body):
 		else:
 			SaveScript.level_data[get_node(".").get_parent().get_parent().name][get_node(".").get_parent().name] = true
 		
-		body.recogerLlave(tipoLlave)
+    body.recogerLlave(tipoLlave)
 		
 		enArbol = true
 		get_node(".").queue_free()

@@ -33,7 +33,7 @@ func tirarLlave(llaveCaida, arbolLlave):
 func _on_HitBoxArbol_area_entered(area):
 	if area.name != 'HitBoxLlave' and area.name != 'hurtBoxJugador':
 		match tipo:
-			'dorada': 
+			'dorada':
 				tirarLlave("LlaveCaidaD", "ArbolLlaveD")
 			'roja':
 				tirarLlave("LlaveCaidaR", "ArbolLlaveR")

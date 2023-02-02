@@ -275,3 +275,4 @@ position = Vector2( 455, 137 )
 [editable path="jugador/hurtBoxJugador"]
 [editable path="jugador/GUI"]
 [editable path="jugador/GUI/Joystick"]
+
