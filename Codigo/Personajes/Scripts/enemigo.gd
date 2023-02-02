@@ -41,9 +41,6 @@ func _physics_process(delta):
 	velocidad = move_and_slide(velocidad)
 		
 func _on_HitBox_area_entered(area):
-	print('----')
-	print(saludEnemigo)
-	
 	match area.name:
 		'areaGolpeoCA':
 			saludEnemigo = saludEnemigo - 50
@@ -51,9 +48,6 @@ func _on_HitBox_area_entered(area):
 		'areaGolpeoSA':
 			saludEnemigo = saludEnemigo - 25
 			vectorPosEnemigo = area.vector_direccionGolpe * 95
-	
-	print(saludEnemigo)
-	print('+++++')
 	
 	if saludEnemigo <= 0:
 		get_node(".").queue_free()

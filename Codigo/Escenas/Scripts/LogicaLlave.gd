@@ -12,7 +12,14 @@ func _ready():
 
 func recoger(body):
 	if body.name == 'jugador':
-		body.recogerLlave(tipoLlave)
+		Checkpoints.reaparicion = global_position
+		
+		if 'Nivel' in get_node(".").get_parent().name:
+			SaveScript.level_data[get_node(".").get_parent().name][get_node(".").name] = true
+		else:
+			SaveScript.level_data[get_node(".").get_parent().get_parent().name][get_node(".").get_parent().name] = true
+		
+    body.recogerLlave(tipoLlave)
 		
 		enArbol = true
 		get_node(".").queue_free()

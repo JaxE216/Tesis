@@ -4,7 +4,7 @@ var tipoPuente
 
 func _ready():
 	tipoPuente = get_node(".").name
-	print(tipoPuente)
+  
 	match tipoPuente:
 		'PuenteHorizontal_SM':
 			habilitarPuenteH(true)

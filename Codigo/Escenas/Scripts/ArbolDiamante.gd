@@ -10,15 +10,17 @@ func get_class():
 	return "ArbolDiamante"
 
 func tirarDiamante():
+	print('tirado')
 	get_node("DiamanteCaido").show()
 	get_node("ArbolDiamante").hide()
 	get_node("ArbolSinDiamante").show()
 	
 	get_node("DiamanteCaido").enArbol = false
-	get_node("HitBoxArbol").queue_free()
-
+	
+	if get_node("DiamanteCaido").recogido:
+		get_node("DiamanteCaido").queue_free()
 
 func _on_HitBoxArbol_area_entered(area):
 	if area.name != 'HitBoxDiamante' and area.name != 'hurtBoxJugador':
-#		yield(get_tree().create_timer(0.6), "timeout")
+		get_node("HitBoxArbol").queue_free()
 		tirarDiamante()

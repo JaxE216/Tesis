@@ -5,14 +5,15 @@ class_name BotonPuente
 onready var tipoPuente = get_parent()
 
 func _on_HitBox_area_entered(area):
-	print('Golpeó el botón')
-	presionarBoton()
-	
-	if tipoPuente.get_parent().name != "Nivel_4":
-		# Espera 5 segundos y luego vuelve a desaparecer el puente
-		yield(get_tree().create_timer(5), "timeout")
+	if area.name != 'hurtBoxJugador':
+		print('Golpeó el botón')
+		presionarBoton()
 		
-		levantarBoton()
+		if tipoPuente.get_parent().name != "Nivel_4":
+			# Espera 5 segundos y luego vuelve a desaparecer el puente
+			yield(get_tree().create_timer(5), "timeout")
+			
+			levantarBoton()
 
 func presionarBoton():
 	get_node("BotonInicial").hide()
